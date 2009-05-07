@@ -26,5 +26,5 @@ bool AVRTargetMachine::addAssemblyEmitter(PassManagerBase &PM, bool Fast,
 
 namespace {
   // Register the targets
-  RegisterTarget<AVRTargetMachine> X("avr", "  AVR 8-bit");
+  RegisterTarget<AVRTargetMachine> X("avr", "AVR 8-bit [experimental]");
 }
