@@ -1,7 +1,13 @@
 #include "AVRTargetMachine.h"
+#include "llvm/Target/TargetMachineRegistry.h"
 
-/// SparcTargetMachine ctor - Create an ILP32 architecture model
-///
+using namespace llvm;
+
 AVRTargetMachine::AVRTargetMachine(const Module &M, const std::string &FS)
   : DataLayout("E-p:32:32") {
+}
+
+namespace {
+  // Register the targets
+  RegisterTarget<AVRTargetMachine> X("avr", "  AVR 8-bit");
 }
