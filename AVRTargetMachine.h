@@ -26,7 +26,7 @@ public:
   // }
   
   virtual const TargetData *getTargetData() const { return &DataLayout; }
-  static unsigned getModuleMatchQuality(const Module &M);
+  // static unsigned getModuleMatchQuality(const Module &M);
   
   virtual bool addInstSelector(PassManagerBase &PM, bool Fast);
   virtual bool addPreEmitPass(PassManagerBase &PM, bool Fast);
