@@ -53,5 +53,6 @@ TARGETS_TO_BUILD=$TARGETS_TO_BUILD
 
 * Add AVR to the top-level LLVM `Makefile` like so:
 
-    TARGETS_TO_BUILD=X86 Sparc PowerPC Alpha IA64 ARM Mips CellSPU PIC16 CBackend MSIL CppBackend AVR
-    
+<pre><code>
+TARGETS_TO_BUILD=X86 Sparc PowerPC Alpha IA64 ARM Mips CellSPU PIC16 CBackend MSIL CppBackend AVR
+</code></pre>
