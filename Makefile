@@ -7,10 +7,10 @@
 # 
 ##===----------------------------------------------------------------------===##
 LEVEL = ../../..
-LIBRARYNAME = LLVMAvr
-TARGET = Avr
+LIBRARYNAME = LLVMAVR
+TARGET = AVR
 
 # Make sure that tblgen is run, first thing.
-BUILT_SOURCES = # AvrBlah.h.inc
+BUILT_SOURCES = AVRGenRegisterInfo.inc
 
 include $(LEVEL)/Makefile.common
