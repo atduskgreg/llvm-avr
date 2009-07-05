@@ -1,14 +1,3 @@
-// class AVRReg<string n> : Register<n> {
-//   string Namespace = "";
-//   string AsmName = n;
-//   string Name = n;
-//   int SpillSize = 0;
-//   int SpillAlignment= 0;
-//   list<Register> Aliases = [];
-//   list<Register> SubRegs = [];
-//   list<int> DwarfNumbers = [];
-// }
-
 class AVRReg<string n> : Register<n> {
       field bits<5> Num;
       let Namespace = "R";
